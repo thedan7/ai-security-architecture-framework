@@ -67,7 +67,7 @@ This is an active work in progress. Here's where things stand:
 | Document | Status | Notes |
 |----------|--------|-------|
 | [Executive Summary](docs/01-executive-summary.md) | **Complete** | |
-| [AI Risk Taxonomy](docs/02-ai-risk-taxonomy.md) | Planned | Researching NIST AI RMF mapping |
+| [AI Risk Taxonomy](docs/02-ai-risk-taxonomy.md) | **Complete** | |
 | [Azure AI Security Architecture](docs/03-azure-ai-security-architecture.md) | Planned | Priority - starting here |
 | [Governance Operating Model](docs/04-governance-operating-model.md) | Planned | |
 | [Control Mapping](docs/05-control-mapping.md) | Planned | Dependent on risk taxonomy |
