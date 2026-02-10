@@ -1,0 +1,50 @@
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Editors
+## VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+## JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+## Vim / Neovim
+*.swp
+*.swo
+*~
+.netrwhist
+
+## Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# OS-generated
+*.tmp
+*.bak
+*.log
