@@ -1,6 +1,20 @@
-# AI Governance & Security Architecture for Financial Services
+# AI Governance & Security Architecture Framework
 
-A practical, opinionated framework for securing AI/ML workloads in regulated financial services environments, with a focus on Azure AI services, large language models, and the emerging standards that govern them.
+A practical, vendor-neutral framework for securing AI/ML workloads in enterprise environments. Covers LLM security, RAG architecture, prompt injection defence, and AI governance — mapped to OWASP LLM Top 10, ISO 42001, and NIST AI RMF.
+
+Built for security architects, CISOs, and DevSecOps teams deploying GenAI across any industry.
+
+## 🔄 Framework Evolution (February 2026)
+
+**Update:** This framework has evolved from a financial services focus to universal AI security architecture.
+
+**Why the pivot:**
+- AI security expertise applies across ALL industries (not just financial services)
+- Broader market opportunity (tech companies, enterprises, government, consulting)
+- Vendor-neutral positioning (Azure, AWS, GCP, Anthropic, OpenAI)
+- Global applicability (OWASP LLM Top 10, ISO 42001, NIST AI RMF are universal standards)
+
+The framework now addresses AI security architecture for any organization deploying LLMs, RAG systems, and GenAI applications.
 
 ---
 
@@ -16,36 +30,36 @@ Think of it as an architect's notebook, not a textbook.
 
 I've spent 20 years in security architecture. I've seen what happens when organizations adopt transformative technology without security architecture that keeps pace - cloud taught us that lesson, and AI is teaching it again, faster.
 
-Financial services CISOs are fielding board-level questions about AI risk today, and the industry's answers are still fragmented across overlapping frameworks (ISO 42001, NIST AI RMF, EU AI Act) with limited practical guidance for Azure-centric environments.
+CISOs across every industry are fielding board-level questions about AI risk today, and the answers are still fragmented across overlapping frameworks (ISO 42001, NIST AI RMF, EU AI Act, OWASP LLM Top 10) with limited practical guidance for real-world deployments.
 
 I'm building this framework to:
 
 - **Learn systematically** - Writing forces clarity. Publishing forces rigor.
-- **Bridge the gap** between abstract AI governance standards and concrete Azure implementation patterns.
+- **Bridge the gap** between abstract AI governance standards and concrete implementation patterns across cloud platforms.
 - **Demonstrate architectural thinking** - Not just *what* to secure, but *why* these trade-offs, *why* this control placement, *why* this architecture over the alternatives.
 - **Contribute to the community** - The more security architects share their thinking on AI governance, the faster we all get better at it.
 
 ## What's Inside
 
-The framework is organized into six areas that mirror how I think about AI security architecture in financial services:
+The framework is organized into six areas that mirror how I think about AI security architecture:
 
 ### 1. Executive Summary
-A board-ready overview of AI risk in financial services, why existing security frameworks are necessary but insufficient, and what an AI governance program needs to address.
+A board-ready overview of AI risk, why existing security frameworks are necessary but insufficient, and what an AI governance program needs to address.
 
 ### 2. AI Risk Taxonomy
-A structured classification of AI-specific risks - model risks, data risks, operational risks, ethical risks - mapped to financial services regulatory expectations. Built on NIST AI RMF categories but extended for banking-specific concerns like fair lending and market manipulation.
+A structured classification of AI-specific risks - model risks, data risks, operational risks, ethical risks - mapped to industry standards. Built on NIST AI RMF categories and extended for enterprise concerns like data leakage, hallucination risk, and supply chain integrity.
 
-### 3. Azure AI Security Architecture
-Reference architectures for securing Azure OpenAI Service, Azure AI Studio, and supporting infrastructure. Covers network isolation, identity and access, data protection, and logging patterns. This is where my day-to-day Azure security experience meets AI-specific requirements.
+### 3. AI Security Architecture
+Reference architectures for securing LLM deployments, RAG pipelines, and AI infrastructure across cloud platforms. Covers network isolation, identity and access, data protection, and logging patterns. Vendor-neutral patterns with cloud-specific implementation guidance.
 
 ### 4. Governance Operating Model
 The people and process side: roles, responsibilities, review gates, and escalation paths for AI workloads. Covers the AI model lifecycle from experimentation through production, including who approves what and when.
 
 ### 5. Control Mapping
-Cross-referencing exercise mapping controls across ISO 42001, NIST AI RMF, OWASP LLM Top 10, and existing financial services frameworks (FFIEC, SR 11-7). The goal is to show where existing controls already address AI risks and where net-new controls are needed.
+Cross-referencing exercise mapping controls across ISO 42001, NIST AI RMF, OWASP LLM Top 10, and industry-specific regulatory frameworks. The goal is to show where existing controls already address AI risks and where net-new controls are needed.
 
-### 6. Banking Use Cases & Threat Models
-Concrete threat models for common financial services AI use cases: customer-facing chatbots, document processing, fraud detection, credit decisioning. Each use case includes STRIDE-based threat analysis, attack trees, and recommended mitigations.
+### 6. Enterprise Use Cases & Threat Models
+Concrete threat models for common enterprise AI use cases: customer service chatbots, internal AI assistants, document processing and summarisation, and AI-augmented decision support. Each use case includes STRIDE-based threat analysis, attack trees, and recommended mitigations.
 
 ## Architecture Decision Records (ADRs)
 
@@ -71,7 +85,7 @@ This is an active work in progress. Here's where things stand:
 | [Azure AI Security Architecture](docs/03-azure-ai-security-architecture.md) | Planned | Priority - starting here |
 | [Governance Operating Model](docs/04-governance-operating-model.md) | Planned | |
 | [Control Mapping](docs/05-control-mapping.md) | Planned | Dependent on risk taxonomy |
-| [Banking Use Cases & Threat Models](docs/06-banking-use-cases.md) | Planned | |
+| [Enterprise Use Cases & Threat Models](docs/06-enterprise-use-cases.md) | Planned | |
 | [Threat Models](docs/07-threat-models.md) | Planned | STRIDE-based approach |
 | ADR-001: Azure OpenAI vs. Self-Hosted | Planned | |
 | ADR-002: Guardrail Architecture | Planned | |
@@ -85,16 +99,15 @@ This is an active work in progress. Here's where things stand:
 - **Security architects** - Start with the [Azure AI Security Architecture](docs/03-azure-ai-security-architecture.md) for reference patterns, then review the [ADRs](adrs/) for decision rationale.
 - **CISOs and risk leaders** - Start with the [Executive Summary](docs/01-executive-summary.md) and [AI Risk Taxonomy](docs/02-ai-risk-taxonomy.md) for the risk landscape.
 - **Governance teams** - Start with the [Control Mapping](docs/05-control-mapping.md) to understand how AI controls map to your existing framework.
-- **Everyone** - The [Banking Use Cases](docs/06-banking-use-cases.md) ground everything in concrete scenarios.
+- **Everyone** - The [Enterprise Use Cases](docs/06-enterprise-use-cases.md) ground everything in concrete scenarios.
 
 ## Standards and Frameworks Referenced
 
 - **ISO/IEC 42001:2023** - AI Management System
 - **NIST AI Risk Management Framework (AI RMF 1.0)**
 - **OWASP LLM Top 10 (2025)**
-- **FFIEC Guidance on AI/ML** - Federal Financial Institutions Examination Council
-- **SR 11-7** - Federal Reserve Guidance on Model Risk Management
-- **EU AI Act** - Where relevant to global financial institutions
+- **EU AI Act** - European regulatory framework for AI systems
+- **SOC 2 / ISO 27001** - Where AI controls extend existing security frameworks
 
 ## About the Author
 
@@ -111,7 +124,7 @@ This repository is a **personal learning project** and does not constitute profe
 - **Not professional advice.** The content in this framework is provided for educational and informational purposes only. It should not be relied upon as legal, regulatory, compliance, or security advice. Financial institutions should engage qualified professionals for AI governance, risk management, and regulatory compliance decisions.
 - **Not an employer position.** All views, opinions, and architectural recommendations expressed here are my own. They do not represent the views, policies, or positions of Microsoft or any other organisation I am or have been affiliated with.
 - **No warranty.** This framework is provided "as is" without warranty of any kind. I make no guarantees about the accuracy, completeness, or suitability of any content for any particular purpose. AI security is a rapidly evolving domain and information may become outdated.
-- **No assessment of third parties.** Nothing in this framework should be interpreted as an assessment, criticism, or endorsement of the security posture, AI practices, or risk management capabilities of any specific financial institution, technology vendor, or other organisation.
+- **No assessment of third parties.** Nothing in this framework should be interpreted as an assessment, criticism, or endorsement of the security posture, AI practices, or risk management capabilities of any specific organisation, technology vendor, or cloud provider.
 - **Use at your own risk.** Any implementation decisions based on patterns or recommendations in this framework are the sole responsibility of the implementing organisation. Always validate against your own regulatory obligations, risk appetite, and organisational context.
 
 ## Contributing
