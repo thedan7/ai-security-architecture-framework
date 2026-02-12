@@ -9,7 +9,7 @@
 
 ## Overview
 
-AI systems face threats that traditional security was not built to handle. The reason is simple: traditional software is deterministic. If you put $2 into a vending machine, you always get the same soda. You can test every input, predict every output, and patch problems when you find them. AI is different. AI is more like asking a person a question. The same question might get different answers depending on what the AI has been told, what documents it has read, and how the question is worded. You cannot predict every output, and you cannot simply "patch" a wrong answer.
+AI systems face threats that traditional security was not built to handle. Traditional software is predictable — like a calculator, it gives you the same answer to the same equation, every single time. You can test every input, predict every output, and patch problems when you find them. AI is the opposite. AI systems are non-deterministic — the same question can produce different answers depending on what information the system has access to, what documents it has read, and how the question is worded. It is more like asking an advisor for a recommendation than typing a formula into a spreadsheet. You cannot predict every output, and you cannot simply 'patch' a wrong answer.
 
 This matters because AI systems now make real decisions in real organisations. They answer customer questions, summarise legal documents, screen job applications, and flag suspicious transactions. When these systems fail — or when attackers make them fail — the consequences are real: leaked data, wrong decisions, legal liability, and lost trust.
 
